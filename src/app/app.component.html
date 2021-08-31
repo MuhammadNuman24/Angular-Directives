@@ -1,0 +1,22 @@
+<h1>{{header|uppercase}}</h1>
+
+  <ul>
+  <li *ngFor = "let color of colors">
+    {{color|lowercase}}
+  </li>
+</ul>
+
+<form>
+<div>
+  <label for="new-color-input" > New Color:</label>
+  <input type="text" id="new-color-input" 
+  name="newcolor" [(ngModel)]= "newcolor">
+ 
+</div>
+<button type="button" (click)="addcolor()">Add Color</button>
+</form>
+<div>
+  {{date|date:'medium'}}<br>
+  {{rupee|currency:'USD'}}
+
+</div>
