@@ -13,6 +13,7 @@ export class AppComponent {
   ]
 
 newcolor :string= "";
+
 addcolor(){
   this.colors.push(this.newcolor)
 }
